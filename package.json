@@ -2,6 +2,7 @@
   "name": "lol-analysis",
   "version": "1.0.0",
   "private": true,
+  "main": "build/electron/main.js",
   "dependencies": {
     "@ant-design/charts": "^1.4.2",
     "@ant-design/icons": "^5.0.1",
@@ -10,12 +11,14 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
+    "sqlite3": "^5.1.6",
     "@tensorflow/tfjs": "^4.4.0"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
+    "@types/sqlite3": "^3.1.8",
     "concurrently": "^8.0.1",
     "cross-env": "^7.0.3",
     "electron": "^25.0.0",
@@ -31,5 +34,30 @@
     "electron:dev": "concurrently \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\"",
     "electron:build": "npm run build && electron-builder",
     "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "appId": "com.lolanalysis.app",
+    "mac": {
+      "category": "public.app-category.games",
+      "target": ["dmg", "zip"]
+    },
+    "win": {
+      "target": ["nsis"]
+    },
+    "linux": {
+      "target": ["AppImage", "deb"]
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 } 

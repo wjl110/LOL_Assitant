@@ -45,6 +45,27 @@ npm run dev
 bash
 npm run build
 
+# MAC
+## 1. 安装 Node.js (如果还没安装)
+brew install node
+
+# 2. 安装项目依赖
+npm install
+
+## 3. 开发模式运行
+npm run electron:dev
+
+## 4. 打包 Mac 应用
+npm run electron:build
+
+^Mac 上的调试提示：
+使用 Command + Option + I 打开开发者工具
+使用 Command + R 刷新应用
+使用 Activity Monitor 监控应用性能
+确保已安装 Node.js 和 npm
+在终端中进入项目目录
+运行 chmod +x start.sh 给启动脚本执行权限
+运行 ./start.sh 启动应用
 
 ### 项目结构
 src/

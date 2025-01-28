@@ -1,3 +1,5 @@
+import { MatchData } from '@shared/types';
+
 export const mockMatchData: MatchData = {
   gameId: "TEST_GAME_1",
   gameDuration: 1800, // 30分钟

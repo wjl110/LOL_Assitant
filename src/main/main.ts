@@ -12,7 +12,10 @@ function createWindow() {
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false
-    }
+    },
+    titleBarStyle: 'hiddenInset',
+    vibrancy: 'under-window',
+    visualEffectState: 'active'
   });
 
   // 加载应用
@@ -54,4 +57,24 @@ app.on('activate', () => {
   if (mainWindow === null) {
     createWindow();
   }
-}); 
+});
+
+if (process.platform === 'darwin') {
+  const template = [
+    {
+      label: app.name,
+      submenu: [
+        { role: 'about' },
+        { type: 'separator' },
+        { role: 'services' },
+        { type: 'separator' },
+        { role: 'hide' },
+        { role: 'hideOthers' },
+        { role: 'unhide' },
+        { type: 'separator' },
+        { role: 'quit' }
+      ]
+    }
+  ];
+  // 设置菜单
+} 
