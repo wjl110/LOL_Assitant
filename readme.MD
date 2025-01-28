@@ -95,4 +95,4 @@ src/
 MIT License
 
 # 鸣谢
-![](https://www.github.com/wjl110)
+[](https://www.github.com/wjl110)
