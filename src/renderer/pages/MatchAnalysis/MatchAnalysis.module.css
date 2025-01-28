@@ -1,0 +1,36 @@
+.matchAnalysis {
+  padding: 24px;
+}
+
+.matchInfo {
+  margin-top: 24px;
+}
+
+.searchBar {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.playerInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.championIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.teamBlue {
+  background-color: rgba(0, 102, 255, 0.1);
+}
+
+.teamRed {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.detailButton {
+  margin-right: 8px;
+} 

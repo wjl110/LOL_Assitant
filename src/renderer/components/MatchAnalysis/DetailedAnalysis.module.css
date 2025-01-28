@@ -1,0 +1,71 @@
+.detailedAnalysis {
+  padding: 24px;
+}
+
+.chartCard {
+  margin-top: 24px;
+  height: 400px;
+}
+
+.chartCard :global(.ant-card-body) {
+  height: calc(100% - 57px);
+}
+
+.statCard {
+  text-align: center;
+}
+
+.statValue {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.statLabel {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.teamStats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.vsLabel {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1890ff;
+  margin: 0 16px;
+}
+
+.timeline {
+  margin-top: 24px;
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.timelineEvent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 8px;
+  background: white;
+  border-radius: 4px;
+}
+
+.eventTime {
+  min-width: 80px;
+  font-weight: 500;
+}
+
+.eventIcon {
+  margin: 0 12px;
+  font-size: 18px;
+}
+
+.eventDescription {
+  flex: 1;
+} 

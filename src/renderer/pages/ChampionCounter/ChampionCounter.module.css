@@ -1,0 +1,36 @@
+.championCounter {
+  padding: 24px;
+}
+
+.counterInfo {
+  margin-top: 24px;
+}
+
+.selectArea {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.championSelect {
+  min-width: 200px;
+}
+
+.difficultyRate {
+  color: #faad14;
+}
+
+.counterDescription {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+}
+
+.winRate {
+  color: #52c41a;
+  font-weight: 500;
+}
+
+.loseRate {
+  color: #f5222d;
+  font-weight: 500;
+} 

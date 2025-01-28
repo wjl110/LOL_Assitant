@@ -1,0 +1,30 @@
+.dashboard {
+  padding: 24px;
+}
+
+.chart {
+  margin-top: 24px;
+  height: 400px;
+}
+
+.statCard {
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.statCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.statTitle {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 14px;
+}
+
+.statValue {
+  margin-top: 4px;
+  font-size: 24px;
+  font-weight: 600;
+} 
